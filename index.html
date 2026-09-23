@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="My Babies - baby essentials, nursery items, baby clothing, feeding accessories and more. Pre-order through WhatsApp.">
+  <meta name="theme-color" content="#b20f1e">
+  <title>My Babies | Baby Essentials & Nursery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="#home" class="brand" aria-label="My Babies home">
+        <span class="brand-mark">MB</span>
+        <span>
+          <strong>MY BABIES</strong>
+          <small>Baby • Nursery • Essentials</small>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a class="nav-cta" href="#products">Shop Products</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">BABY ESSENTIALS • NURSERY • MORE</div>
+          <h1>Everything little ones need, <span>all in one place.</span></h1>
+          <p>
+            Browse our baby and nursery collection using the clear product photos below.
+            Ready to order? Pre-order directly through WhatsApp.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-red" href="#products">View Products</a>
+            <a class="btn btn-light" href="#contact">Visit / Contact Us</a>
+          </div>
+
+          <div class="hero-trust">
+            <div><strong>78+</strong><span>Products shown</span></div>
+            <div><strong>WhatsApp</strong><span>Easy pre-orders</span></div>
+            <div><strong>Johannesburg</strong><span>Pickup / enquiries</span></div>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="hero-card-top">
+            <span>MY BABIES</span>
+            <span class="dot"></span>
+            <span>PRE-ORDER</span>
+          </div>
+          <div class="hero-feature">
+            <img src="assets/images/product-01.jpg" alt="My Babies featured baby product" loading="eager">
+          </div>
+          <div class="hero-card-bottom">
+            <div>
+              <small>Collection</small>
+              <strong>Baby & Nursery</strong>
+            </div>
+            <a href="#products" aria-label="Browse the collection">→</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick-bar">
+      <div class="container quick-grid">
+        <div><span class="quick-icon">✓</span><div><strong>Clear product photos</strong><small>See the item before enquiring</small></div></div>
+        <div><span class="quick-icon">↗</span><div><strong>WhatsApp pre-order</strong><small>Send your product enquiry quickly</small></div></div>
+        <div><span class="quick-icon">⌖</span><div><strong>Johannesburg location</strong><small>Easy pickup / in-person enquiries</small></div></div>
+      </div>
+    </section>
+
+    <section id="products" class="products-section">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">OUR COLLECTION</div>
+            <h2>Shop the My Babies collection</h2>
+            <p>Click any product to view a larger image and start a pre-order enquiry.</p>
+          </div>
+          <div class="search-box">
+            <label for="search">Search products</label>
+            <input id="search" type="search" placeholder="Search product number..." autocomplete="off">
+          </div>
+        </div>
+
+        <div id="productGrid" class="product-grid" aria-live="polite"></div>
+        <div id="noResults" class="no-results" hidden>No products matched your search.</div>
+      </div>
+    </section>
+
+    <section id="about" class="about-section">
+      <div class="container about-grid">
+        <div>
+          <div class="eyebrow">ABOUT MY BABIES</div>
+          <h2>Simple shopping for growing families.</h2>
+        </div>
+        <div class="about-copy">
+          <p>
+            My Babies brings together a practical selection of baby and nursery products.
+            We focus on making it easy for customers to browse, ask questions and pre-order.
+          </p>
+          <p class="note">
+            Product names, prices and stock can change. Please use WhatsApp to confirm current
+            availability and pricing before placing an order.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div class="container contact-grid">
+        <div class="contact-panel dark">
+          <div class="eyebrow light">ORDER / ENQUIRIES</div>
+          <h2>Ready to pre-order?</h2>
+          <p>Choose a product above and use its WhatsApp button. Your message will include the product number automatically.</p>
+          <button class="btn btn-red full" id="mainWhatsapp">Open WhatsApp</button>
+          <p class="small-note">Your WhatsApp number can be added once you provide it.</p>
+        </div>
+
+        <div class="contact-panel">
+          <div class="eyebrow">OUR LOCATION</div>
+          <h3>Mzansi zonke bonke</h3>
+          <p class="address">31 Gerard Sekoto St<br>Johannesburg, 2001<br>South Africa</p>
+          <a class="btn btn-outline full" target="_blank" rel="noopener"
+             href="https://www.google.com/maps/search/?api=1&query=31+Gerard+Sekoto+St%2C+Johannesburg%2C+2001">
+             Open in Google Maps
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div>
+        <strong>MY BABIES</strong>
+        <span>Baby • Nursery • Essentials</span>
+      </div>
+      <div>© 2026 My Babies. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <div class="modal" id="imageModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close="1"></div>
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+      <div class="modal-image-wrap"><img id="modalImage" src="" alt=""></div>
+      <div class="modal-info">
+        <div>
+          <div class="eyebrow">MY BABIES</div>
+          <h3 id="modalTitle">Baby Product</h3>
+          <p id="modalText">Pre-order this product through WhatsApp.</p>
+        </div>
+        <button class="btn btn-red" id="modalWhatsapp">Pre-order on WhatsApp</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Add the business WhatsApp number here later.
+    // South Africa example format: 2782XXXXXXX (no +, spaces or leading zero).
+    const WHATSAPP_NUMBER = "";
+
+    const PRODUCTS = [
+  {
+    "id": 1,
+    "image": "assets/images/product-01.jpg",
+    "original_name": "663037224_835673205488561_769599288036785677_n.jpg"
+  },
+  {
+    "id": 2,
+    "image": "assets/images/product-02.jpg",
+    "original_name": "737645580_2545797282541616_1078521645981065660_n.jpg"
+  },
+  {
+    "id": 3,
+    "image": "assets/images/product-03.jpg",
+    "original_name": "737827257_1834724664158014_2528967841420121750_n.jpg"
+  },
+  {
+    "id": 4,
+    "image": "assets/images/product-04.jpg",
+    "original_name": "737845593_1686496479069709_1362924765117983164_n.jpg"
+  },
+  {
+    "id": 5,
+    "image": "assets/images/product-05.jpg",
+    "original_name": "738261672_3076753909185827_5545838260744612531_n.jpg"
+  },
+  {
+    "id": 6,
+    "image": "assets/images/product-06.jpg",
+    "original_name": "738335395_2078564359401022_3417671947514078383_n.jpg"
+  },
+  {
+    "id": 7,
+    "image": "assets/images/product-07.jpg",
+    "original_name": "738503917_1329871052136620_3848437661625032479_n.jpg"
+  },
+  {
+    "id": 8,
+    "image": "assets/images/product-08.jpg",
+    "original_name": "738511827_3049056868622533_6803130067453349080_n.jpg"
+  },
+  {
+    "id": 9,
+    "image": "assets/images/product-09.jpg",
+    "original_name": "738653502_1977489952898123_6735362429703298625_n.jpg"
+  },
+  {
+    "id": 10,
+    "image": "assets/images/product-10.jpg",
+    "original_name": "738828999_1737907440559757_3883953163636780416_n.jpg"
+  },
+  {
+    "id": 11,
+    "image": "assets/images/product-11.jpg",
+    "original_name": "738916362_27394219943551224_8490235494995649468_n.jpg"
+  },
+  {
+    "id": 12,
+    "image": "assets/images/product-12.jpg",
+    "original_name": "739101203_1063348792933074_2705009757621250635_n.jpg"
+  },
+  {
+    "id": 13,
+    "image": "assets/images/product-13.jpg",
+    "original_name": "739214773_1922436001780830_7303328971435443018_n.jpg"
+  },
+  {
+    "id": 14,
+    "image": "assets/images/product-14.jpg",
+    "original_name": "739264498_2170615437066413_4372496190773124282_n.jpg"
+  },
+  {
+    "id": 15,
+    "image": "assets/images/product-15.jpg",
+    "original_name": "739276902_1440989541123725_4204179466626762939_n.jpg"
+  },
+  {
+    "id": 16,
+    "image": "assets/images/product-16.jpg",
+    "original_name": "739295071_4200869986719769_2446035526987208228_n.jpg"
+  },
+  {
+    "id": 17,
+    "image": "assets/images/product-17.jpg",
+    "original_name": "739295137_981349044962860_1964257120557310763_n.jpg"
+  },
+  {
+    "id": 18,
+    "image": "assets/images/product-18.jpg",
+    "original_name": "739332355_1011856688410125_7636354726921996910_n.jpg"
+  },
+  {
+    "id": 19,
+    "image": "assets/images/product-19.jpg",
+    "original_name": "739470777_971595622547764_4687704927609538396_n.jpg"
+  },
+  {
+    "id": 20,
+    "image": "assets/images/product-20.jpg",
+    "original_name": "739553236_1824917045153203_1648198114121122806_n.jpg"
+  },
+  {
+    "id": 21,
+    "image": "assets/images/product-21.jpg",
+    "original_name": "739561569_1325981922994630_1182262358134919998_n.jpg"
+  },
+  {
+    "id": 22,
+    "image": "assets/images/product-22.jpg",
+    "original_name": "739578959_1587962046019855_8606737245290938423_n.jpg"
+  },
+  {
+    "id": 23,
+    "image": "assets/images/product-23.jpg",
+    "original_name": "739609681_1720242972649751_4067720171234185316_n.jpg"
+  },
+  {
+    "id": 24,
+    "image": "assets/images/product-24.jpg",
+    "original_name": "739782163_1047907654245116_4087894225723303393_n.jpg"
+  },
+  {
+    "id": 25,
+    "image": "assets/images/product-25.jpg",
+    "original_name": "739794826_904423735303773_2445302237264203634_n.jpg"
+  },
+  {
+    "id": 26,
+    "image": "assets/images/product-26.jpg",
+    "original_name": "740079430_2313330782408465_2153632360507829864_n.jpg"
+  },
+  {
+    "id": 27,
+    "image": "assets/images/product-27.jpg",
+    "original_name": "740184135_1728254041650909_5167271005427164507_n.jpg"
+  },
+  {
+    "id": 28,
+    "image": "assets/images/product-28.jpg",
+    "original_name": "740215621_1222934017565893_6767510064114565199_n.jpg"
+  },
+  {
+    "id": 29,
+    "image": "assets/images/product-29.jpg",
+    "original_name": "740224778_1060624849727678_5653780521911639615_n.jpg"
+  },
+  {
+    "id": 30,
+    "image": "assets/images/product-30.jpg",
+    "original_name": "740271393_1050797574059019_2014981794520690201_n.jpg"
+  },
+  {
+    "id": 31,
+    "image": "assets/images/product-31.jpg",
+    "original_name": "740272019_1953533459366962_8919343935885881666_n.jpg"
+  },
+  {
+    "id": 32,
+    "image": "assets/images/product-32.jpg",
+    "original_name": "740326094_1741507766855996_7239840336810540841_n.jpg"
+  },
+  {
+    "id": 33,
+    "image": "assets/images/product-33.jpg",
+    "original_name": "740356246_960120900393516_3489026567515211085_n.jpg"
+  },
+  {
+    "id": 34,
+    "image": "assets/images/product-34.jpg",
+    "original_name": "740445840_27396074073392289_399443953878370008_n.jpg"
+  },
+  {
+    "id": 35,
+    "image": "assets/images/product-35.jpg",
+    "original_name": "740507982_1651719282583704_3394174880009427825_n.jpg"
+  },
+  {
+    "id": 36,
+    "image": "assets/images/product-36.jpg",
+    "original_name": "740611659_1352328270210630_8990478672449500903_n.jpg"
+  },
+  {
+    "id": 37,
+    "image": "assets/images/product-37.jpg",
+    "original_name": "740722950_1738024617434395_1839363925272586556_n.jpg"
+  },
+  {
+    "id": 38,
+    "image": "assets/images/product-38.jpg",
+    "original_name": "740754128_825351553877795_7310934752920515312_n.jpg"
+  },
+  {
+    "id": 39,
+    "image": "assets/images/product-39.jpg",
+    "original_name": "740821780_1016802354272201_319390195171403466_n.jpg"
+  },
+  {
+    "id": 40,
+    "image": "assets/images/product-40.jpg",
+    "original_name": "740836267_2484835455369113_4562649869392526167_n.jpg"
+  },
+  {
+    "id": 41,
+    "image": "assets/images/product-41.jpg",
+    "original_name": "740953750_3330717177135210_5598126896599007970_n.jpg"
+  },
+  {
+    "id": 42,
+    "image": "assets/images/product-42.jpg",
+    "original_name": "741047180_1679336973356407_4740170020586455889_n.jpg"
+  },
+  {
+    "id": 43,
+    "image": "assets/images/product-43.jpg",
+    "original_name": "741057218_4432663086990954_3732439814777834769_n.jpg"
+  },
+  {
+    "id": 44,
+    "image": "assets/images/product-44.jpg",
+    "original_name": "741428323_2086019685316761_3384988719581172059_n.jpg"
+  },
+  {
+    "id": 45,
+    "image": "assets/images/product-45.jpg",
+    "original_name": "741620025_949355874795370_589886487723011533_n.jpg"
+  },
+  {
+    "id": 46,
+    "image": "assets/images/product-46.jpg",
+    "original_name": "758904783_4562034657349756_8252242383207602964_n.jpg"
+  },
+  {
+    "id": 47,
+    "image": "assets/images/product-47.jpg",
+    "original_name": "774036815_1344126817508808_5651663532888909264_n.jpg"
+  },
+  {
+    "id": 48,
+    "image": "assets/images/product-48.jpg",
+    "original_name": "774512653_2161201938167048_3248318965734545997_n.jpg"
+  },
+  {
+    "id": 49,
+    "image": "assets/images/product-49.jpg",
+    "original_name": "775154454_2996966043982158_8791358771849878237_n.jpg"
+  },
+  {
+    "id": 50,
+    "image": "assets/images/product-50.jpg",
+    "original_name": "775213670_1537921114210287_8982098942985994870_n.jpg"
+  },
+  {
+    "id": 51,
+    "image": "assets/images/product-51.jpg",
+    "original_name": "775272349_1199861545670749_8239302099408666604_n.jpg"
+  },
+  {
+    "id": 52,
+    "image": "assets/images/product-52.jpg",
+    "original_name": "775904751_1031681029487298_3612096606775398393_n.jpg"
+  },
+  {
+    "id": 53,
+    "image": "assets/images/product-53.jpg",
+    "original_name": "776252917_1375844480654368_3082067332845987514_n.jpg"
+  },
+  {
+    "id": 54,
+    "image": "assets/images/product-54.jpg",
+    "original_name": "777508191_983866071325447_8882467367345302693_n.jpg"
+  },
+  {
+    "id": 55,
+    "image": "assets/images/product-55.jpg",
+    "original_name": "777515668_1594020772276538_5244322078327215479_n.jpg"
+  },
+  {
+    "id": 56,
+    "image": "assets/images/product-56.jpg",
+    "original_name": "789049458_1076254375328636_816451235340376758_n.jpg"
+  },
+  {
+    "id": 57,
+    "image": "assets/images/product-57.jpg",
+    "original_name": "789187490_1076255148661892_4962710386215646439_n.jpg"
+  },
+  {
+    "id": 58,
+    "image": "assets/images/product-58.jpg",
+    "original_name": "789432066_1076255458661861_2034457717720525026_n.jpg"
+  },
+  {
+    "id": 59,
+    "image": "assets/images/product-59.jpg",
+    "original_name": "789606094_1076254978661909_7152575049064608195_n.jpg"
+  },
+  {
+    "id": 60,
+    "image": "assets/images/product-60.jpg",
+    "original_name": "789760283_1076254445328629_4892739731330512973_n.jpg"
+  },
+  {
+    "id": 61,
+    "image": "assets/images/product-61.jpg",
+    "original_name": "789934533_1076254511995289_4768272991293629495_n.jpg"
+  },
+  {
+    "id": 62,
+    "image": "assets/images/product-62.jpg",
+    "original_name": "789934533_1076254578661949_6584773519380560640_n.jpg"
+  },
+  {
+    "id": 63,
+    "image": "assets/images/product-63.jpg",
+    "original_name": "790121101_1076255255328548_4923314939517773421_n.jpg"
+  },
+  {
+    "id": 64,
+    "image": "assets/images/product-64.jpg",
+    "original_name": "791384712_1076254821995258_9026068539441868335_n.jpg"
+  },
+  {
+    "id": 65,
+    "image": "assets/images/product-65.jpg",
+    "original_name": "792191675_18585762877066989_6955840903636631361_n.jpg"
+  },
+  {
+    "id": 66,
+    "image": "assets/images/product-66.jpg",
+    "original_name": "793869182_1062153920121615_4221486450740041685_n.jpg"
+  },
+  {
+    "id": 67,
+    "image": "assets/images/product-67.jpg",
+    "original_name": "794826637_2149671302427662_816836347098634575_n.jpg"
+  },
+  {
+    "id": 68,
+    "image": "assets/images/product-68.jpg",
+    "original_name": "796639869_1549046670571461_5683155928068952500_n.jpg"
+  },
+  {
+    "id": 69,
+    "image": "assets/images/product-69.jpg",
+    "original_name": "812132913_1549046503904811_6141911138649752796_n.jpg"
+  },
+  {
+    "id": 70,
+    "image": "assets/images/product-70.jpg",
+    "original_name": "815469886_2149671212427671_753361036158799710_n.jpg"
+  },
+  {
+    "id": 71,
+    "image": "assets/images/product-71.jpg",
+    "original_name": "816861526_2149671342427658_3790043671263488783_n.jpg"
+  },
+  {
+    "id": 72,
+    "image": "assets/images/product-72.jpg",
+    "original_name": "817191997_2149671239094335_1582306262766423837_n.jpg"
+  },
+  {
+    "id": 73,
+    "image": "assets/images/product-73.jpg",
+    "original_name": "817742734_2149671182427674_3332487761070805028_n.jpg"
+  },
+  {
+    "id": 74,
+    "image": "assets/images/product-74.jpg",
+    "original_name": "818063842_2149671269094332_6220104597383969492_n.jpg"
+  },
+  {
+    "id": 75,
+    "image": "assets/images/product-75.jpg",
+    "original_name": "819012175_10175838288935717_1332153189977959129_n.jpg"
+  },
+  {
+    "id": 76,
+    "image": "assets/images/product-76.jpg",
+    "original_name": "images (1).jpg"
+  },
+  {
+    "id": 77,
+    "image": "assets/images/product-77.jpg",
+    "original_name": "images (2).jpg"
+  },
+  {
+    "id": 78,
+    "image": "assets/images/product-78.jpg",
+    "original_name": "images.jpg"
+  }
+];
+
+    const grid = document.getElementById("productGrid");
+    const search = document.getElementById("search");
+    const noResults = document.getElementById("noResults");
+
+    let selectedProduct = null;
+
+    function whatsappUrl(product) {
+      const message =
+        "Hello My Babies, I would like to pre-order / enquire about Product " +
+        String(product.id).padStart(2, "0") +
+        ". Please confirm the price, availability and delivery/pickup options.";
+
+      const encoded = encodeURIComponent(message);
+
+      if (WHATSAPP_NUMBER.trim()) {
+        return "https://wa.me/" + WHATSAPP_NUMBER.trim() + "?text=" + encoded;
+      }
+
+      // Temporary fallback: opens WhatsApp with the pre-filled enquiry text.
+      return "https://api.whatsapp.com/send?text=" + encoded;
+    }
+
+    function renderProducts(list) {
+      grid.innerHTML = "";
+
+      list.forEach(product => {
+        const card = document.createElement("article");
+        card.className = "product-card";
+        card.innerHTML = `
+          <button class="product-image-btn" aria-label="View Product ${String(product.id).padStart(2, "0")}">
+            <img src="${product.image}" alt="My Babies Product ${String(product.id).padStart(2, "0")}" loading="lazy">
+            <span class="view-badge">View image</span>
+          </button>
+          <div class="product-body">
+            <div class="product-meta">
+              <span>PRODUCT ${String(product.id).padStart(2, "0")}</span>
+              <span>Price on request</span>
+            </div>
+            <h3>Baby Product ${String(product.id).padStart(2, "0")}</h3>
+            <p>See the clear product photo, then send a quick pre-order enquiry.</p>
+            <div class="product-actions">
+              <button class="btn btn-dark details-btn">View</button>
+              <a class="btn btn-red" href="${whatsappUrl(product)}" target="_blank" rel="noopener">Pre-order</a>
+            </div>
+          </div>
+        `;
+
+        const imageButton = card.querySelector(".product-image-btn");
+        const detailsButton = card.querySelector(".details-btn");
+        imageButton.addEventListener("click", () => openModal(product));
+        detailsButton.addEventListener("click", () => openModal(product));
+        grid.appendChild(card);
+      });
+
+      noResults.hidden = list.length !== 0;
+    }
+
+    function openModal(product) {
+      selectedProduct = product;
+      document.getElementById("modalImage").src = product.image;
+      document.getElementById("modalImage").alt = "My Babies Product " + String(product.id).padStart(2, "0");
+      document.getElementById("modalTitle").textContent = "Baby Product " + String(product.id).padStart(2, "0");
+      document.getElementById("modalText").textContent =
+        "Product " + String(product.id).padStart(2, "0") +
+        " • Price on request • Contact us to confirm availability.";
+      const modal = document.getElementById("imageModal");
+      modal.classList.add("open");
+      modal.setAttribute("aria-hidden", "false");
+      document.body.classList.add("modal-open");
+    }
+
+    function closeModal() {
+      const modal = document.getElementById("imageModal");
+      modal.classList.remove("open");
+      modal.setAttribute("aria-hidden", "true");
+      document.body.classList.remove("modal-open");
+    }
+
+    document.getElementById("modalClose").addEventListener("click", closeModal);
+    document.querySelector(".modal-backdrop").addEventListener("click", closeModal);
+    document.addEventListener("keydown", e => { if (e.key === "Escape") closeModal(); });
+
+    document.getElementById("modalWhatsapp").addEventListener("click", () => {
+      if (selectedProduct) window.open(whatsappUrl(selectedProduct), "_blank", "noopener");
+    });
+
+    document.getElementById("mainWhatsapp").addEventListener("click", () => {
+      const message = encodeURIComponent(
+        "Hello My Babies, I would like to enquire about your baby products and pre-order options."
+      );
+      const url = WHATSAPP_NUMBER.trim()
+        ? "https://wa.me/" + WHATSAPP_NUMBER.trim() + "?text=" + message
+        : "https://api.whatsapp.com/send?text=" + message;
+      window.open(url, "_blank", "noopener");
+    });
+
+    search.addEventListener("input", () => {
+      const q = search.value.toLowerCase().trim();
+      const filtered = PRODUCTS.filter(p =>
+        ("product " + String(p.id).padStart(2, "0")).includes(q) ||
+        String(p.id).includes(q) ||
+        p.original_name.toLowerCase().includes(q)
+      );
+      renderProducts(filtered);
+    });
+
+    renderProducts(PRODUCTS);
+  </script>
+</body>
+</html>

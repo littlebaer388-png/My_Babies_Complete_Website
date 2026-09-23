@@ -1,0 +1,3 @@
+Open index.html and change WHATSAPP_NUMBER = "" to your business number.
+Use international format, no +, spaces or leading 0.
+Example: 27821234567
